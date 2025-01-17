@@ -3,6 +3,7 @@
 ### Taipy is an innovative Python framework designed to simplify the creation of interactive and visually engaging data fucused, BI and data science applications
 
 ---
+
 ### How to run it locally?
 
 First setup new Python virtual environment at venv folder and install required components:
@@ -16,6 +17,7 @@ Then you are ready to run an application:
 Finally open an URL [http://localhost:3000](http://localhost:3000) at the browser.
 
 ---
+
 ### Run with Podman/Docker
 
 Buld container image:
