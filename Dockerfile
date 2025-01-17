@@ -18,5 +18,6 @@ RUN pip install -r requirements.txt
 EXPOSE 3000
 
 # Run an app
-CMD python3 main.py --host=0.0.0.0 --port=3000
+# CMD python3 main.py --host=0.0.0.0 --port=3000
+CMD ["taipy", "run", "--no-debug", "--no-reloader", "main.py", "--host", "0.0.0.0", "-P", "3000"]
 # CMD ["sleep", "infinity"]
