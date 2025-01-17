@@ -36,7 +36,11 @@ def on_slider(state, var, val):
     state.fig = plot_choro(val)
 
 with tgb.Page() as page:
-    tgb.text( value= f"### Country CO2 Emissions from {year_min} to {year_max}", mode='md', class_name="color-secondary")
+    tgb.text( 
+        value=f"### Country CO2 Emissions from {year_min} to {year_max}", 
+        mode='md', 
+        class_name="page-title"
+    )
     tgb.text(value="#### Use the slider to select a year", mode='md')
     tgb.slider(value="{year}", min=year_min, max=year_max, on_change=on_slider)
     tgb.chart(figure="{fig}")

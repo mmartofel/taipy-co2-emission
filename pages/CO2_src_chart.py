@@ -14,7 +14,11 @@ src = "Total"
 fig2 = plot_chart(df, src)
 
 with tgb.Page() as page:
-    tgb.text( value = "### CO2 Emissions by source since the mid-19th Century", mode = 'md', class_name="color-secondary")
+    tgb.text( 
+        value = "### CO2 Emissions by source since the mid-19th Century", 
+        mode = 'md', 
+        class_name="page-title"
+    )
     tgb.selector(label="Select a CO2 Source", 
                     value="{src}", 
                     lov="Total;Coal;Oil;Gas;Cement", 
