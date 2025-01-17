@@ -16,6 +16,18 @@ Then you are ready to run an application:
 Finally open an URL [http://localhost:3000](http://localhost:3000) at the browser.
 
 ---
+### Run with Podman/Docker
 
+Buld container image:
+
+`podman build -t taipy-co2-emission -f Dockerfile .`
+
+Run your newly built container image:
+
+`podman run -d -p 3000:3000 --name taipy-co2-emission localhost/taipy-co2-emission`
+
+Open an URL [http://localhost:3000](http://localhost:3000) at the browser.
+
+---
 
 Data delivered thanks to OWID: https://ourworldindata.org
